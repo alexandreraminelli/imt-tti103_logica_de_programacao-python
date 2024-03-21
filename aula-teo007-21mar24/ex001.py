@@ -2,9 +2,10 @@ lista = []
 
 for n in range(1, 6):
     lista.append(int(input(f'Digite o {n}º número: ')))
-print('=' * 25)
+print('-' * 35)
 
 maior = menor = lista[0]
+maior_posicao = menor_posicao = 0
 for p, n in enumerate(lista):
     if n > maior:
         maior = n
